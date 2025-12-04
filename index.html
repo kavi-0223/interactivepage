@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Interactive Webpage</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f0f5;
+            text-align: center;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 25px 0;
+            font-size: 28px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .container {
+            margin: 40px auto;
+            max-width: 700px;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        button {
+            padding: 12px 22px;
+            font-size: 16px;
+            border: none;
+            border-radius: 6px;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #45a049;
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        footer {
+            margin-top: 50px;
+            padding: 15px;
+            background: #ddd;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    👋 Welcome to My Interactive Webpage
+</header>
+
+<div class="container">
+    <h2>Hello Friend!</h2>
+    <p>Yeh ek simple + interactive webpage hai jo tum GitHub par host kar sakte ho.</p>
+
+    <button onclick="showMessage()">Click me 😄</button>
+
+    <p id="message">Aree wah! Tumne button click kiya 🎉😎</p>
+</div>
+
+<footer>
+    © 2025 | kavita 
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("message").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
